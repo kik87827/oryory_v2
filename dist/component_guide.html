@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/front.js"></script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			var htmlArray = [],
+				reverseArray = [];
+			$(window).on("load", function() {
+
+				cmaTextareaSize();
+			});
+
+			function cmaTextareaSize(obj, bsize) { // 객체명, 기본사이즈
+				var sTextarea = $(".textarea_size");
+				sTextarea.each(function() {
+					$(this).css("height", $(this)[0].scrollHeight);
+				});
+			}
+		</script>
+		<section class="middle_wrap bgtype2 guide">
+			<div class="subcontent_box_wrap">
+				<div class="subcontent_box">
+					<h3 class="subcontent_title">컴포넌트 가이드</h3>
+					<div class="subcontent">
+						<div class="source_his_z">
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">버튼</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.버튼 표현 모음</p>
+										<div class="render_wrap">
+											<a href="#" class="btn_box">선물하기</a>
+											<a href="#" class="btn_box big">선물하기</a>
+											<a href="#" class="btn_box green">카카오채널 바로가기</a>
+											<a href="#" class="btn_box big green min_big">카카오채널 바로가기</a>
+											<br><br>
+
+											<button type="submit" class="btn_box">버튼타입 서브밋</button>
+											<input type="submit" class="btn_box" value="인풋타입 서브밋">
+											<button type="submit" class="btn_box green">버튼타입 서브밋</button>
+											<input type="submit" class="btn_box big green min_big" value="인풋타입 서브밋">
+
+											<br><br>
+
+											<a href="#" class="btn_box big min_medium white">이전</a>
+											<a href="#" class="btn_box big min_bigx2 green">주문하기</a>
+
+											<button type="submit" class="btn_box big min_medium white">버튼타입 서브밋</button>
+											<input type="submit" class="btn_box big min_bigx2 green" value="인풋타입 서브밋">
+
+											<br><br>
+											<button type="submit" class="btn_box big min_medium white">버튼타입 서브밋</button>
+											<button type="submit" class="btn_box big min_bigx2 green">버튼타입 서브밋</button>
+											<br><br>
+											<input type="submit" class="btn_box big min_medium white" value="인풋타입 서브밋">
+											<input type="submit" class="btn_box big min_bigx2 green" value="인풋타입 서브밋">
+
+											<br><br>
+
+											<a href="#" class="btn_formsubmit">로그인</a><br>
+											<a href="#" class="btn_formsubmit dtype2">회원가입</a>
+											<br><br>
+											<button type="submit" class="btn_formsubmit">버튼타입 서브밋</button><br>
+											<input type="submit" class="btn_formsubmit dtype2" value="인풋타입 서브밋">
+
+											<br><br>
+
+											<a href="javascript:;" class="btn_submitbox">닫기</a>
+											<a href="javascript:;" class="btn_submitbox dtype2">닫기</a>
+											<a href="javascript:;" class="btn_submitbox dtype2 small">닫기</a>
+
+											<br><br>
+
+											<button type="submit" class="btn_submitbox">버튼타입 서브밋</button>
+											<button type="submit" class="btn_submitbox dtype2">버튼타입 서브밋</button>
+											<input type="submit" class="btn_submitbox" value="인풋타입 서브밋">
+											<input type="submit" class="btn_submitbox dtype2" value="인풋타입 서브밋">
+
+											<br><br>
+
+											<a href="#" class="btn_inline_form">이미지 변경하기</a>
+											<a href="#" class="btn_inline_form small">이미지 변경하기</a>
+
+											<br><br>
+
+											<button type="submit" class="btn_inline_form">버튼타입 서브밋</button>
+											<button type="submit" class="btn_inline_form small">버튼타입 서브밋</button>
+											<input type="submit" class="btn_inline_form" value="인풋타입 서브밋">
+											<input type="submit" class="btn_inline_form small" value="인풋타입 서브밋">
+
+											<br><br>
+
+											<a href="#" class="btn_boxobj ico_download"><span class="btn_boxobj_text">첨부파일</span></a>
+											<a href="#" class="btn_boxobj"><span class="btn_boxobj_text">다운로드</span></a>
+											<a href="#" class="btn_boxobj ctype2 emp"><span class="btn_boxobj_text">구매상담 바로가기</span></a>
+
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">2.버튼 정렬(대부분 가운데)</p>
+										<div class="render_wrap">
+											<div class="btn_submit_group">
+												<a href="#" class="btn_box big min_big green">카카오채널 바로가기</a>
+											</div>
+											<div class="btn_submit_group mtype2 mb_flex">
+												<a href="#" class="btn_box big min_medium white">이전</a>
+												<a href="#" class="btn_box big min_bigx2 green">주문하기</a>
+											</div>
+											<div class="btn_formsubmit_low">
+												<a href="#" class="btn_formsubmit">로그인</a>
+												<a href="#" class="btn_formsubmit dtype2">회원가입</a>
+											</div>
+											<div class="btn_submit_group">
+												<button type="submit" class="btn_box big min_big green">버튼타입 서브밋</button>
+											</div>
+											<div class="btn_submit_group">
+												<input type="submit" class="btn_box big min_big green" value="인풋타입 서브밋">
+											</div>
+											<div class="btn_submit_group mtype2 mb_flex">
+												<a href="#" class="btn_box big min_medium white">이전</a>
+												<a href="#" class="btn_box big min_bigx2 green">주문하기</a>
+											</div>
+											<div class="btn_formsubmit_low">
+												<a href="#" class="btn_formsubmit">로그인</a>
+												<a href="#" class="btn_formsubmit dtype2">회원가입</a>
+											</div>
+											<div class="btn_submit_group mtype2 mb_flex">
+												<button type="submit" class="btn_box big min_medium white">이전(버튼)</button>
+												<button type="submit" class="btn_box big min_bigx2 green">주문하기(버튼)</button>
+											</div>
+											<div class="btn_submit_group mtype2 mb_flex">
+												<input type="submit" class="btn_box big min_medium white" value="이전(인풋)">
+												<input type="submit" class="btn_box big min_bigx2 green" value="주문하기(인풋)">
+											</div>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">3. 페이지 네비</p>
+										<div class="render_wrap">
+											<ul class="pagination">
+												<li class="paginate_button previous"><a href="#">이전</a></li>
+												<li class="paginate_button active"><a href="#">1</a></li>
+												<li class="paginate_button"><a href="#">2</a></li>
+												<li class="paginate_button"><a href="#">3</a></li>
+												<li class="paginate_button"><a href="#">4</a></li>
+												<li class="paginate_button"><a href="#">5</a></li>
+												<li class="paginate_button next"><a href="#">다음</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">4. 아이콘 버튼</p>
+										<div class="render_wrap">
+											<a href="#" class="btn_search_submit"><span class="hdtext">검색</span></a>
+											<button type="submit" class="btn_search_submit"><span class="hdtext">검색</span></button>
+											<input type="submit" class="btn_search_submit">
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+1.폼하단 전용
+<a href="#" class="btn_box">선물하기</a>
+<a href="#" class="btn_box big">선물하기</a>
+<a href="#" class="btn_box big min_big green">카카오채널 바로가기</a>
+
+<button type="submit" class="btn_box">버튼타입 서브밋</button>
+<input type="submit" class="btn_box" value="인풋타입 서브밋">
+<button type="submit" class="btn_box green">버튼타입 서브밋</button>
+<input type="submit" class="btn_box big green min_big" value="인풋타입 서브밋">
+
+
+<a href="#" class="btn_formsubmit">로그인</a>
+<a href="#" class="btn_formsubmit dtype2">회원가입</a>
+<a href="javascript:;" class="btn_submitbox">닫기</a>
+<a href="javascript:;" class="btn_submitbox dtype2">닫기</a>
+<a href="javascript:;" class="btn_submitbox dtype2 small">닫기</a>
+<a href="#" class="btn_box big min_medium white">이전</a>
+<a href="#" class="btn_box big min_bigx2 green">주문하기</a>
+
+<button type="submit" class="btn_box big min_medium white">버튼타입 서브밋</button>
+<input type="submit" class="btn_box big min_bigx2 green" value="인풋타입 서브밋">
+
+<button type="submit" class="btn_box big min_medium white">버튼타입 서브밋</button>
+<button type="submit" class="btn_box big min_bigx2 green">버튼타입 서브밋</button>
+
+<input type="submit" class="btn_box big min_medium white" value="인풋타입 서브밋">
+<input type="submit" class="btn_box big min_bigx2 green" value="인풋타입 서브밋">
+
+
+<a href="#" class="btn_inline_form">이미지 변경하기</a>
+<a href="#" class="btn_inline_form small">이미지 변경하기</a>
+<a href="#" class="btn_boxobj ico_download"><span class="btn_boxobj_text">첨부파일</span></a>
+<a href="#" class="btn_boxobj"><span class="btn_boxobj_text">다운로드</span></a>
+<a href="#" class="btn_boxobj ctype2 emp"><span class="btn_boxobj_text">구매상담 바로가기</span></a>
+
+<a href="#" class="btn_inline_form">이미지 변경하기</a>
+<a href="#" class="btn_inline_form small">이미지 변경하기</a>
+
+<button type="submit" class="btn_inline_form">버튼타입 서브밋</button>
+<button type="submit" class="btn_inline_form small">버튼타입 서브밋</button>
+<input type="submit" class="btn_inline_form" value="인풋타입 서브밋">
+<input type="submit" class="btn_inline_form small" value="인풋타입 서브밋">
+
+2.버튼 정렬(대부분 가운데)
+<div class="btn_submit_group">
+	<a href="#" class="btn_box big min_big green">카카오채널 바로가기</a>
+</div>
+<div class="btn_submit_group mtype2 mb_flex">
+	<a href="#" class="btn_box big min_medium white">이전</a>
+	<a href="#" class="btn_box big min_bigx2 green">주문하기</a>
+</div>
+<div class="btn_formsubmit_low">
+	<a href="#" class="btn_formsubmit">로그인</a>
+	<a href="#" class="btn_formsubmit dtype2">회원가입</a>
+</div>
+<div class="btn_submit_group">
+	<button type="submit" class="btn_box big min_big green">버튼타입 서브밋</button>
+</div>
+<div class="btn_submit_group">
+	<input type="submit" class="btn_box big min_big green" value="인풋타입 서브밋">
+</div>
+<div class="btn_submit_group mtype2 mb_flex">
+	<a href="#" class="btn_box big min_medium white">이전</a>
+	<a href="#" class="btn_box big min_bigx2 green">주문하기</a>
+</div>
+<div class="btn_formsubmit_low">
+	<a href="#" class="btn_formsubmit">로그인</a>
+	<a href="#" class="btn_formsubmit dtype2">회원가입</a>
+</div>
+<div class="btn_submit_group mtype2 mb_flex">
+	<button type="submit" class="btn_box big min_medium white">이전(버튼)</button>
+	<button type="submit" class="btn_box big min_bigx2 green">주문하기(버튼)</button>
+</div>
+<div class="btn_submit_group mtype2 mb_flex">
+	<input type="submit" class="btn_box big min_medium white" value="이전(인풋)">
+	<input type="submit" class="btn_box big min_bigx2 green" value="주문하기(인풋)">
+</div>
+
+
+3. 페이지 네비
+<ul class="pagination">
+	<li class="paginate_button previous"><a href="#">이전</a></li>
+	<li class="paginate_button active"><a href="#">1</a></li>
+	<li class="paginate_button"><a href="#">2</a></li>
+	<li class="paginate_button"><a href="#">3</a></li>
+	<li class="paginate_button"><a href="#">4</a></li>
+	<li class="paginate_button"><a href="#">5</a></li>
+	<li class="paginate_button next"><a href="#">다음</a></li>
+</ul>
+
+4. 아이콘 버튼
+<a href="#" class="btn_search_submit"><span class="hdtext">검색</span></a>
+<button type="submit" class="btn_search_submit"><span class="hdtext">검색</span></button>
+<input type="submit" class="btn_search_submit">
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">[폼요소]인풋, 텍스트박스, 체크박스, 셀렉트박스</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.폼요소 표현 모음</p>
+										<div class="render_wrap">
+											<div class="chkrd_item">
+												<input type="checkbox" class="chkrd" id="idsave">
+												<label for="idsave" class="chkrd_label">아이디저장</label>
+											</div>
+											<br>
+											<div class="chkrd_item">
+												<input type="checkbox" class="chkrd" id="security">
+												<label for="security" class="chkrd_label">보안키인증</label>
+											</div>
+											<br>
+											<input type="checkbox" class="chkrd">
+											<br><br>
+											<select class="select_obj">
+												<option>제목,내용</option>
+											</select>
+											<br><br>
+											<select class="select_obj max_wid100">
+												<option>제목,내용</option>
+											</select>
+											<br><br>
+											<!-- placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+											<input type="password" class="form_input respon_placeholder" placeholder="8~16자 영문, 숫자, 특수문자(!@#$%^&amp;_*)를 조합해주세요.">
+											<p class="respon_placeholder_parag">8~16자 영문, 숫자, 특수문자(!@#$%^&amp;_*)를 조합해주세요.</p>
+											<!-- // placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+											<br>
+											<input type="text" class="form_input max_wid60" placeholder="신청자 UID">
+											<br>
+											<input type="text" class="form_input max_wid70" placeholder="신청자 UID">
+											<br>
+											<input type="text" class="form_input max_wid80" placeholder="신청자 UID">
+											<br>
+											<input type="text" class="form_input max_wid90" placeholder="신청자 UID">
+											<br>
+											<input type="text" class="form_input small max_wid90" placeholder="신청자 UID small">
+											<br><br>
+											<textarea rows="10" cols="10" class="form_textarea"></textarea>
+											<br><br>
+											<textarea rows="10" cols="10" class="form_textarea height_small" readonly="">내용이 들어갑니다.</textarea>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">2.검색영역 폼요소 표현</p>
+										<div class="render_wrap">
+											<fieldset class="search_fieldset">
+												<legend>검색</legend>
+												<div class="search_field_item_group">
+													<div class="search_field_item">
+														<select class="select_obj">
+															<option>제목,내용</option>
+														</select>
+														<select class="select_obj">
+															<option>Row10</option>
+														</select>
+													</div>
+													<div class="search_field_item">
+														<input type="text" class="form_input pc_wid180 small long_item" placeholder="검색어 입력">
+														<a href="#" class="btn_search_submit"><span class="hdtext">검색</span></a>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+1.폼요소 표현 모음
+<div class="chkrd_item">
+	<input type="checkbox" class="chkrd" id="idsave">
+	<label for="idsave" class="chkrd_label">아이디저장</label>
+</div>
+
+<div class="chkrd_item">
+	<input type="checkbox" class="chkrd" id="security">
+	<label for="security" class="chkrd_label">보안키인증</label>
+</div>
+
+<input type="checkbox" class="chkrd">
+
+<select class="select_obj">
+	<option>제목,내용</option>
+</select>
+
+<select class="select_obj max_wid100">
+	<option>제목,내용</option>
+</select>
+
+<!-- placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+<input type="password" class="form_input respon_placeholder" placeholder="8~16자 영문, 숫자, 특수문자(!@#$%^&amp;_*)를 조합해주세요.">
+<p class="respon_placeholder_parag">8~16자 영문, 숫자, 특수문자(!@#$%^&amp;_*)를 조합해주세요.</p>
+<!-- // placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+
+<input type="text" class="form_input max_wid60" placeholder="신청자 UID">
+
+<input type="text" class="form_input max_wid70" placeholder="신청자 UID">
+
+<input type="text" class="form_input max_wid80" placeholder="신청자 UID">
+
+<input type="text" class="form_input max_wid90" placeholder="신청자 UID">
+
+<input type="text" class="form_input small" placeholder="신청자 UID small">
+
+&lt;textarea rows="10" cols="10" class="form_textarea"></textarea&gt;
+
+&lt;textarea rows="10" cols="10" class="form_textarea height_small">내용이 들어갑니다.</textarea&gt;
+
+2.검색영역 폼요소 표현
+&lt;fieldset class="search_fieldset"&gt;
+	&lt;legend>검색</legend&gt;
+	<div class="search_field_item_group">
+		<div class="search_field_item">
+			<select class="select_obj">
+				<option>제목,내용</option>
+			</select>
+			<select class="select_obj">
+				<option>Row10</option>
+			</select>
+		</div>
+		<div class="search_field_item">
+			<input type="text" class="form_input pc_wid180 small long_item" placeholder="검색어 입력">
+			<a href="#" class="btn_search_submit"><span class="hdtext">검색</span></a>
+		</div>
+	</div>
+&lt;/fieldset&gt;
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">TAB</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<div class="render_wrap">
+											<br>
+											<div class="tabmenu_list_wrap">
+												<div class="tabmenu_list">
+													<a href="#" class="tabmenu active"><span class="tabmenu_text">포인트 선물</span></a>
+													<a href="#" class="tabmenu"><span class="tabmenu_text">포인트 전환</span></a>
+												</div>
+											</div>
+
+											<br><br>
+
+											<div class="tabmenu_list_wrap">
+												<div class="tabmenu_list">
+													<a href="#" class="tabmenu active"><span class="tabmenu_text">EGG</span></a>
+													<a href="#" class="tabmenu"><span class="tabmenu_text">DONY</span></a>
+													<a href="#" class="tabmenu"><span class="tabmenu_text">POINT</span></a>
+												</div>
+											</div>
+
+											<br><br>
+
+											<div class="sctab_list_wrap">
+												<div class="sctab_list">
+													<a href="#" class="sctab active"><span class="sctab_text">EGG</span></a>
+													<a href="#" class="sctab"><span class="sctab_text">DONY</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+<div class="tabmenu_list_wrap">
+	<div class="tabmenu_list">
+		<a href="#" class="tabmenu active"><span class="tabmenu_text">포인트 선물</span></a>
+		<a href="#" class="tabmenu"><span class="tabmenu_text">포인트 전환</span></a>
+	</div>
+</div>
+
+
+<div class="tabmenu_list_wrap">
+	<div class="tabmenu_list">
+		<a href="#" class="tabmenu active"><span class="tabmenu_text">EGG</span></a>
+		<a href="#" class="tabmenu"><span class="tabmenu_text">DONY</span></a>
+		<a href="#" class="tabmenu"><span class="tabmenu_text">POINT</span></a>
+	</div>
+</div>
+
+
+<div class="sctab_list_wrap">
+	<div class="sctab_list">
+		<a href="#" class="sctab active"><span class="sctab_text">EGG</span></a>
+		<a href="#" class="sctab"><span class="sctab_text">DONY</span></a>
+	</div>
+</div>
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">Flex 레이아웃</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.Flex 레이아웃 - Right</p>
+										<div class="render_wrap">
+											<div class="flex_grid align_right">
+												<div class="chkrd_item">
+													<input type="checkbox" class="chkrd" id="all_ok">
+													<label for="all_ok" class="chkrd_label">이용약관에 모두 동의합니다.</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">2.Flex 레이아웃 - both</p>
+										<div class="render_wrap">
+											<div class="flex_grid align_both">
+												<div class="chkrd_item">
+													<input type="checkbox" class="chkrd today_check" id="today_check">
+													<label for="today_check" class="chkrd_label">오늘 하루 열지 않음</label>
+												</div>
+												<a href="javascript:;" class="btn_submitbox inline_type dtype2 close_trigger small">닫기</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+1.Flex 레이아웃 - Right
+<div class="flex_grid align_right">
+	<div class="chkrd_item">
+		<input type="checkbox" class="chkrd" id="all_ok">
+		<label for="all_ok" class="chkrd_label">이용약관에 모두 동의합니다.</label>
+	</div>
+</div>
+
+2.Flex 레이아웃 - both
+<div class="flex_grid align_both">
+	<div class="chkrd_item">
+		<input type="checkbox" class="chkrd today_check" id="today_check">
+		<label for="today_check" class="chkrd_label">오늘 하루 열지 않음</label>
+	</div>
+	<a href="javascript:;" class="btn_submitbox inline_type dtype2 close_trigger small">닫기</a>
+</div>
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">아이콘</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.아이콘 표현 모음</p>
+										<div class="render_wrap">
+											<div class="ico_copy_obj only_ico"></div>
+											<div class="ico_category only_ico"></div>
+											<div class="ico_category ico_type2 only_ico"></div>
+											<div class="ico_category ico_type3 only_ico"></div>
+											<div class="ico_category ico_type4 only_ico"></div>
+											<div class="ico_category ico_type5 only_ico"></div>
+											<div class="ico_category ico_type6 only_ico"></div>
+											<div class="ico_category ico_type7 only_ico"></div>
+
+											<span class="data_ico egg only_ico"></span>
+											<span class="data_ico egg bg_type2 only_ico"></span>
+
+											<span class="data_ico dony only_ico"></span>
+											<span class="data_ico dony bg_type2 only_ico"></span>
+
+											<span class="data_ico point only_ico"></span>
+											<span class="data_ico point bg_type2 only_ico"></span>
+
+											<span class="ico_notice"><span class="hdtext">공지</span></span>
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+1.아이콘 표현 모음
+<div class="ico_copy_obj only_ico"></div>
+<div class="ico_category only_ico"></div>
+<div class="ico_category ico_type2 only_ico"></div>
+<div class="ico_category ico_type3 only_ico"></div>
+<div class="ico_category ico_type4 only_ico"></div>
+<div class="ico_category ico_type5 only_ico"></div>
+<div class="ico_category ico_type6 only_ico"></div>
+<div class="ico_category ico_type7 only_ico"></div>
+
+<span class="data_ico egg only_ico"></span>
+<span class="data_ico egg bg_type2 only_ico"></span>
+
+<span class="data_ico dony only_ico"></span>
+<span class="data_ico dony bg_type2 only_ico"></span>
+
+<span class="data_ico point only_ico"></span>
+<span class="data_ico point bg_type2 only_ico"></span>
+
+<span class="ico_notice"><span class="hdtext">공지</span></span>
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">리스트</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.리스트 모음</p>
+										<div class="render_wrap">
+											<!--  -->
+											<div class="respon_data_list">
+												<div class="respon_data_row">
+													<div class="respon_data_col wid_long">
+														<div class="data_item_group">
+															<span class="data_ico egg"></span>
+															<a href="#" class="data_item_text">ORYORY EVENT 마케팅 추천인 포인트 지급(20%)</a>
+														</div>
+													</div>
+													<div class="respon_data_col has_text wid_short">
+														<span class="data_else_text">2022-06-07</span>
+													</div>
+													<div class="respon_data_col has_text wid_short_2 align_right">
+														<span class="data_current_text">+ 600</span>
+													</div>
+												</div>
+												<div class="respon_data_row">
+													<div class="respon_data_col wid_long">
+														<div class="data_item_group">
+															<span class="data_ico egg bg_type2"></span>
+															<a href="#" class="data_item_text">1단계 ORYORY EVENT 참여 포인트 차감</a>
+														</div>
+													</div>
+													<div class="respon_data_col has_text wid_short">
+														<span class="data_else_text">2022-06-07</span>
+													</div>
+													<div class="respon_data_col has_text wid_short_2 align_right">
+														<span class="data_current_text color_type2">- 4,000</span>
+													</div>
+												</div>
+												<div class="respon_data_row">
+													<div class="respon_data_col wid_long">
+														<div class="data_item_group">
+															<span class="data_ico egg bg_type2"></span>
+															<a href="#" class="data_item_text">1단계 ORYORY EVENT 참여 포인트 차감</a>
+														</div>
+													</div>
+													<div class="respon_data_col has_text wid_short">
+														<span class="data_else_text">2022-06-07</span>
+													</div>
+													<div class="respon_data_col has_text wid_short_2 align_right">
+														<span class="data_current_text color_type2">- 4,000</span>
+													</div>
+												</div>
+												<div class="respon_data_row">
+													<div class="respon_data_col wid_long">
+														<div class="data_item_group">
+															<span class="data_ico egg"></span>
+															<a href="#" class="data_item_text">ORYORY EVENT 마케팅 추천인 포인트 지급(20%)</a>
+														</div>
+													</div>
+													<div class="respon_data_col has_text wid_short">
+														<span class="data_else_text">2022-06-07</span>
+													</div>
+													<div class="respon_data_col has_text wid_short_2 align_right">
+														<span class="data_current_text">+ 600</span>
+													</div>
+												</div>
+												<div class="respon_data_row">
+													<div class="respon_data_col wid_long">
+														<div class="data_item_group">
+															<span class="data_ico egg bg_type2"></span>
+															<a href="#" class="data_item_text">1단계 ORYORY EVENT 참여 포인트 차감</a>
+														</div>
+													</div>
+													<div class="respon_data_col has_text wid_short">
+														<span class="data_else_text">2022-06-07</span>
+													</div>
+													<div class="respon_data_col has_text wid_short_2 align_right">
+														<span class="data_current_text color_type2">- 4,000</span>
+													</div>
+												</div>
+												<div class="respon_data_row">
+													<div class="respon_data_col wid_long">
+														<div class="data_item_group">
+															<span class="data_ico egg bg_type2"></span>
+															<a href="#" class="data_item_text">1단계 ORYORY EVENT 참여 포인트 차감</a>
+														</div>
+													</div>
+													<div class="respon_data_col has_text wid_short">
+														<span class="data_else_text">2022-06-07</span>
+													</div>
+													<div class="respon_data_col has_text wid_short_2 align_right">
+														<span class="data_current_text color_type2">- 4,000</span>
+													</div>
+												</div>
+												<div class="respon_data_row nodata">
+													<div class="respon_data_col">
+														<p class="nodata_parag">데이터가 없습니다.</p>
+													</div>
+												</div>
+											</div>
+											<!-- //  -->
+											<br><br><br>
+											<!--  -->
+											<div class="list_table_wrap">
+												<table class="list_table">
+													<caption>공지사항 리스트</caption>
+													<colgroup>
+														<col style="width:10%">
+														<col>
+														<col style="width:12%">
+														<col style="width:10%">
+													</colgroup>
+													<thead>
+														<tr>
+															<th class="mb_hidden"><span class="th_text">NO</span></th>
+															<th class="long_data"><span class="th_text">제목</span></th>
+															<th class="short_data"><span class="th_text">등록일자</span></th>
+															<th class="short_data"><span class="th_text">조회수</span></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="mb_hidden"><span class="ico_notice"><span class="hdtext">공지</span></span></td>
+															<td class="long_data define_title">
+																<div class="linkage_data_item">
+																	<span class="ico_notice"><span class="hdtext">공지</span></span>
+																	<a href="#" class="linkage_data">Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다</a>
+																	<span class="ico_new"></span>
+																</div>
+															</td>
+															<td class="short_data"><span class="list_data">2022-05-20</span></td>
+															<td class="mb_hidden short_data"><span class="list_data">21</span></td>
+														</tr>
+														<tr>
+															<td class="mb_hidden"><span class="list_data">10</span></td>
+															<td class="long_data define_title">
+																<div class="linkage_data_item">
+																	<a href="#" class="linkage_data">Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다</a>
+																	<span class="ico_new"></span>
+																</div>
+															</td>
+															<td class="short_data"><span class="list_data">2022-05-20</span></td>
+															<td class="mb_hidden short_data"><span class="list_data">21</span></td>
+														</tr>
+														<tr>
+															<td class="mb_hidden"><span class="list_data">10</span></td>
+															<td class="long_data define_title">
+																<div class="linkage_data_item">
+																	<a href="#" class="linkage_data">Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다</a>
+																	<span class="ico_new"></span>
+																</div>
+															</td>
+															<td class="short_data"><span class="list_data">2022-05-20</span></td>
+															<td class="mb_hidden short_data"><span class="list_data">21</span></td>
+														</tr>
+														<tr class="nodata_tr">
+															<td colspan="4" class="nodata_td">
+																<p class="nodata_para">데이터가 없습니다.</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<!-- // -->
+											<br><br><br>
+											<!--  -->
+											<ul class="indent_list">
+												<li>
+													<span class="indent_bullet">1.</span>
+													<div class="indent_item"><strong class="color_emp_red font_bold">작년가입보험사와 다른보험사로 자동차보험을 가입</strong>하셔야 DONY등 지급혜택자격이 부여됩니다.</div>
+												</li>
+												<li>
+													<span class="indent_bullet">2.</span>
+													<div class="indent_item">본인 또는 추천인의 계약으로 산정되기 위해서는 <strong class="color_emp_red font_bold">계약 완료 후 "계약사실통지"에 들어가 가입정보를 입력</strong>하여야 행정처리가 됩니다.</div>
+												</li>
+											</ul>
+											<!-- //  -->
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+<!--  -->
+<div class="respon_data_list">
+	<div class="respon_data_row">
+		<div class="respon_data_col wid_long">
+			<div class="data_item_group">
+				<span class="data_ico egg"></span>
+				<a href="#" class="data_item_text">ORYORY EVENT 마케팅 추천인 포인트 지급(20%)</a>
+			</div>
+		</div>
+		<div class="respon_data_col has_text wid_short">
+			<span class="data_else_text">2022-06-07</span>
+		</div>
+		<div class="respon_data_col has_text wid_short_2 align_right">
+			<span class="data_current_text">+ 600</span>
+		</div>
+	</div>
+	<div class="respon_data_row">
+		<div class="respon_data_col wid_long">
+			<div class="data_item_group">
+				<span class="data_ico egg bg_type2"></span>
+				<a href="#" class="data_item_text">1단계 ORYORY EVENT 참여 포인트 차감</a>
+			</div>
+		</div>
+		<div class="respon_data_col has_text wid_short">
+			<span class="data_else_text">2022-06-07</span>
+		</div>
+		<div class="respon_data_col has_text wid_short_2 align_right">
+			<span class="data_current_text color_type2">- 4,000</span>
+		</div>
+	</div>
+	<div class="respon_data_row">
+		<div class="respon_data_col wid_long">
+			<div class="data_item_group">
+				<span class="data_ico egg bg_type2"></span>
+				<a href="#" class="data_item_text">1단계 ORYORY EVENT 참여 포인트 차감</a>
+			</div>
+		</div>
+		<div class="respon_data_col has_text wid_short">
+			<span class="data_else_text">2022-06-07</span>
+		</div>
+		<div class="respon_data_col has_text wid_short_2 align_right">
+			<span class="data_current_text color_type2">- 4,000</span>
+		</div>
+	</div>
+	<div class="respon_data_row">
+		<div class="respon_data_col wid_long">
+			<div class="data_item_group">
+				<span class="data_ico egg"></span>
+				<a href="#" class="data_item_text">ORYORY EVENT 마케팅 추천인 포인트 지급(20%)</a>
+			</div>
+		</div>
+		<div class="respon_data_col has_text wid_short">
+			<span class="data_else_text">2022-06-07</span>
+		</div>
+		<div class="respon_data_col has_text wid_short_2 align_right">
+			<span class="data_current_text">+ 600</span>
+		</div>
+	</div>
+	<div class="respon_data_row">
+		<div class="respon_data_col wid_long">
+			<div class="data_item_group">
+				<span class="data_ico egg bg_type2"></span>
+				<a href="#" class="data_item_text">1단계 ORYORY EVENT 참여 포인트 차감</a>
+			</div>
+		</div>
+		<div class="respon_data_col has_text wid_short">
+			<span class="data_else_text">2022-06-07</span>
+		</div>
+		<div class="respon_data_col has_text wid_short_2 align_right">
+			<span class="data_current_text color_type2">- 4,000</span>
+		</div>
+	</div>
+	<div class="respon_data_row">
+		<div class="respon_data_col wid_long">
+			<div class="data_item_group">
+				<span class="data_ico egg bg_type2"></span>
+				<a href="#" class="data_item_text">1단계 ORYORY EVENT 참여 포인트 차감</a>
+			</div>
+		</div>
+		<div class="respon_data_col has_text wid_short">
+			<span class="data_else_text">2022-06-07</span>
+		</div>
+		<div class="respon_data_col has_text wid_short_2 align_right">
+			<span class="data_current_text color_type2">- 4,000</span>
+		</div>
+	</div>
+	<div class="respon_data_row nodata">
+		<div class="respon_data_col">
+			<p class="nodata_parag">데이터가 없습니다.</p>
+		</div>
+	</div>
+</div>
+<!-- //  -->
+
+<!--  -->
+<div class="list_table_wrap">
+	<table class="list_table">
+		<caption>공지사항 리스트</caption>
+		<colgroup>
+			<col style="width:10%">
+			<col>
+			<col style="width:12%">
+			<col style="width:10%">
+		</colgroup>
+		<thead>
+			<tr>
+				<th class="mb_hidden"><span class="th_text">NO</span></th>
+				<th class="long_data"><span class="th_text">제목</span></th>
+				<th class="short_data"><span class="th_text">등록일자</span></th>
+				<th class="short_data"><span class="th_text">조회수</span></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="mb_hidden"><span class="ico_notice"><span class="hdtext">공지</span></span></td>
+				<td class="long_data define_title">
+					<div class="linkage_data_item">
+						<span class="ico_notice"><span class="hdtext">공지</span></span>
+						<a href="#" class="linkage_data">Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다</a>
+						<span class="ico_new"></span>
+					</div>
+				</td>
+				<td class="short_data"><span class="list_data">2022-05-20</span></td>
+				<td class="mb_hidden short_data"><span class="list_data">21</span></td>
+			</tr>
+			<tr>
+				<td class="mb_hidden"><span class="list_data">10</span></td>
+				<td class="long_data define_title">
+					<div class="linkage_data_item">
+						<a href="#" class="linkage_data">Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다</a>
+						<span class="ico_new"></span>
+					</div>
+				</td>
+				<td class="short_data"><span class="list_data">2022-05-20</span></td>
+				<td class="mb_hidden short_data"><span class="list_data">21</span></td>
+			</tr>
+			<tr>
+				<td class="mb_hidden"><span class="list_data">10</span></td>
+				<td class="long_data define_title">
+					<div class="linkage_data_item">
+						<a href="#" class="linkage_data">Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다Q2 단말기에 해외복권 구매대행 어플이 추가되었습니다</a>
+						<span class="ico_new"></span>
+					</div>
+				</td>
+				<td class="short_data"><span class="list_data">2022-05-20</span></td>
+				<td class="mb_hidden short_data"><span class="list_data">21</span></td>
+			</tr>
+			<tr class="nodata_tr">
+				<td colspan="4" class="nodata_td">
+					<p class="nodata_para">데이터가 없습니다.</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!-- // -->
+
+<!--  -->
+<ul class="indent_list">
+	<li>
+		<span class="indent_bullet">1.</span>
+		<div class="indent_item"><strong class="color_emp_red font_bold">작년가입보험사와 다른보험사로 자동차보험을 가입</strong>하셔야 DONY등 지급혜택자격이 부여됩니다.</div>
+	</li>
+	<li>
+		<span class="indent_bullet">2.</span>
+		<div class="indent_item">본인 또는 추천인의 계약으로 산정되기 위해서는 <strong class="color_emp_red font_bold">계약 완료 후 "계약사실통지"에 들어가 가입정보를 입력</strong>하여야 행정처리가 됩니다.</div>
+	</li>
+</ul>
+<!-- // -->
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">폰트,마진</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.폰트 표현</p>
+										<div class="render_wrap">
+											<p class="fontsize_12">홍길동</p>
+											<p class="fontsize_13 font_bold">홍길동</p>
+											<p class="fontsize_14 font_boldx2">홍길동</p>
+											<p class="fontsize_15">홍길동</p>
+											<p class="fontsize_16 color_emp_red">홍길동</p>
+											<p class="fontsize_17 color_emp_black font_boldx2">홍길동</p>
+											<p class="fontsize_18">홍길동</p>
+											<p class="fontsize_19 color_emp_black">홍길동</p>
+											<p class="fontsize_20">홍길동</p>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">2.상단마진(고정)</p>
+										<div class="render_wrap">
+											<div style="background:powderblue" class="mt5">상단 5px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt10">상단 10px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt20">상단 20px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt30">상단 30px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt40">상단 40px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt50">상단 50px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt60">상단 60px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt70">상단 70px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt80">상단 80px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt90">상단 90px(PC,모바일공통)</div>
+											<div style="background:powderblue" class="mt100">상단 100px(PC,모바일공통)</div>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">3.상단마진(반응형)</p>
+										<div class="render_wrap">
+											<div style="background:pink" class="respon_mt10">상단 10px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt20">상단 20px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt30">상단 30px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt40">상단 40px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt50">상단 50px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt60">상단 60px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt70">상단 70px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt80">상단 80px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt90">상단 90px(PC,모바일따로)</div>
+											<div style="background:pink" class="respon_mt100">상단 100px(PC,모바일따로)</div>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">3.하단마진(반응형)</p>
+										<div class="render_wrap">
+											<div style="background:lightgreen" class="respon_mb10">하단 10px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb20">하단 20px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb30">하단 30px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb40">하단 40px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb50">하단 50px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb60">하단 60px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb70">하단 70px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb80">하단 80px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb90">하단 90px(PC,모바일따로)</div>
+											<div style="background:lightgreen" class="respon_mb100">하단 100px(PC,모바일따로)</div>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">4.좌우마진(고정)</p>
+										<div class="render_wrap">
+											<div style="background:orange" class="respon_mboth50">좌우 50px(PC,모바일공통)</div>
+											<div style="background:orange" class="respon_mboth60">좌우 60px(PC,모바일공통)</div>
+											<div style="background:orange" class="respon_mboth70">좌우 70px(PC,모바일공통)</div>
+											<div style="background:orange" class="respon_mboth80">좌우 80px(PC,모바일공통)</div>
+											<div style="background:orange" class="respon_mboth90">좌우 90px(PC,모바일공통)</div>
+											<div style="background:orange" class="respon_mboth100">좌우 100px(PC,모바일공통)</div>
+										</div>
+									</div>
+									<div class="component_dep">
+										<p class="component_title_sub">5.전체패딩</p>
+										<div class="render_wrap">
+											<div style="outline:1px solid red" class="padding_box_10_15">상하 10px 좌우 15px(PC,모바일공통)</div>
+											<div style="outline:1px solid red" class="padding_box_10">전체 10px(PC,모바일공통)</div>
+											<div style="outline:1px solid red" class="padding_box_20">전체 20px(PC,모바일따로)</div>
+											<div style="outline:1px solid red" class="padding_box_30">전체 30px(PC,모바일따로)</div>
+											<div style="outline:1px solid red" class="padding_box_40">전체 40px(PC,모바일따로)</div>
+											<div style="outline:1px solid red" class="padding_box_50">전체 50px(PC,모바일따로)</div>
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+1.폰트 표현
+<p class="fontsize_12">홍길동</p>
+<p class="fontsize_13 font_bold">홍길동</p>
+<p class="fontsize_14 font_boldx2">홍길동</p>
+<p class="fontsize_15">홍길동</p>
+<p class="fontsize_16 color_emp_red">홍길동</p>
+<p class="fontsize_17 color_emp_black font_boldx2">홍길동</p>
+<p class="fontsize_18">홍길동</p>
+<p class="fontsize_19 color_emp_black">홍길동</p>
+<p class="fontsize_20">홍길동</p>
+
+2.상단마진(고정)
+<div style="background:powderblue" class="mt5">상단 5px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt10">상단 10px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt20">상단 20px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt30">상단 30px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt40">상단 40px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt50">상단 50px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt60">상단 60px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt70">상단 70px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt80">상단 80px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt90">상단 90px(PC,모바일공통)</div>
+<div style="background:powderblue" class="mt100">상단 100px(PC,모바일공통)</div>
+
+3.상단마진(반응형)
+<div style="background:pink" class="respon_mt10">상단 10px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt20">상단 20px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt30">상단 30px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt40">상단 40px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt50">상단 50px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt60">상단 60px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt70">상단 70px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt80">상단 80px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt90">상단 90px(PC,모바일따로)</div>
+<div style="background:pink" class="respon_mt100">상단 100px(PC,모바일따로)</div>
+
+3.하단마진(반응형)
+<div style="background:lightgreen" class="respon_mb10">하단 10px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb20">하단 20px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb30">하단 30px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb40">하단 40px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb50">하단 50px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb60">하단 60px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb70">하단 70px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb80">하단 80px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb90">하단 90px(PC,모바일따로)</div>
+<div style="background:lightgreen" class="respon_mb100">하단 100px(PC,모바일따로)</div>
+
+4.좌우마진(고정)
+<div style="background:orange" class="respon_mboth50">좌우 50px(PC,모바일공통)</div>
+<div style="background:orange" class="respon_mboth60">좌우 60px(PC,모바일공통)</div>
+<div style="background:orange" class="respon_mboth70">좌우 70px(PC,모바일공통)</div>
+<div style="background:orange" class="respon_mboth80">좌우 80px(PC,모바일공통)</div>
+<div style="background:orange" class="respon_mboth90">좌우 90px(PC,모바일공통)</div>
+<div style="background:orange" class="respon_mboth100">좌우 100px(PC,모바일공통)</div>
+
+5.전체패딩
+<div style="outline:1px solid red" class="padding_box_10_15">상하 10px 좌우 15px(PC,모바일공통)</div>
+<div style="outline:1px solid red" class="padding_box_10">전체 10px(PC,모바일공통)</div>
+<div style="outline:1px solid red" class="padding_box_20">전체 20px(PC,모바일따로)</div>
+<div style="outline:1px solid red" class="padding_box_30">전체 30px(PC,모바일따로)</div>
+<div style="outline:1px solid red" class="padding_box_40">전체 40px(PC,모바일따로)</div>
+<div style="outline:1px solid red" class="padding_box_50">전체 50px(PC,모바일따로)</div>
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+							<!-- source_his_item -->
+							<div class="source_his_item">
+								<p class="component_title">form 테이블</p>
+								<div class="component_dep_wrap">
+									<div class="component_dep">
+										<p class="component_title_sub">1.form 테이블 표현</p>
+										<div class="render_wrap">
+											<!--  -->
+											<div class="form_viewer_table_wrap">
+												<table class="form_viewer_table">
+													<tbody>
+														<tr>
+															<th class="vertical_type2"><span class="form_label">휴대폰<br class="mb_br">번호</span></th>
+															<td>
+																<div class="inline_form_group">
+																	<div class="inline_form_long">
+																		<input type="text" class="form_input respon_placeholder" placeholder="예)01012345678 - 없이 숫자만 기재">
+																		<!-- placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+																		<p class="respon_placeholder_parag">예) 01012345678 - 없이 숫자만 기재</p>
+																		<!-- // placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+																	</div>
+																	<div class="inline_form_short">
+																		<a href="#" class="btn_inline_form">인증번호발송</a>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th class="vertical_type2"><span class="form_label">인증번호<br class="mb_br">입력</span></th>
+															<td>
+																<div class="inline_form_group">
+																	<div class="inline_form_long"><input type="text" class="form_input respon_placeholder" placeholder="인증번호 입력"></div>
+																</div>
+																<p class="inline_form_copy">* 휴대폰 문자로 발송 된 인증번호를 입력해 주세요.</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<!-- // -->
+											<br><br>
+											<!--  -->
+											<div class="form_viewer_table_wrap">
+												<table class="form_viewer_table">
+													<tbody>
+														<tr>
+															<th><span class="form_label emp_green" style="width: 94px;">UID</span></th>
+															<td>
+																<div class="inline_form_group">
+																	<div class="inline_form_long"><input type="text" class="form_input" placeholder="보낼 EGG"></div>
+																	<div class="inline_form_short">
+																		<div class="inline_keydata" style="width: 125px;">
+																			<span class="inline_key">잔액</span>
+																			<span class="inline_data">
+																				<span class="inline_data_num">11,000</span>
+																				<span class="inline_data_unit">ⓒ</span>
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th><span class="form_label emp_green" style="width: 94px;">DONY</span></th>
+															<td>
+																<div class="inline_form_group">
+																	<div class="inline_form_long"><input type="text" class="form_input" placeholder="보낼 DONY"></div>
+																	<div class="inline_form_short">
+																		<div class="inline_keydata" style="width: 125px;">
+																			<span class="inline_key">잔액</span>
+																			<span class="inline_data">
+																				<span class="inline_data_num">-943,468</span>
+																				<span class="inline_data_unit">ⓒ</span>
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th><span class="form_label emp_green" style="width: 94px;">POINT</span></th>
+															<td>
+																<div class="inline_form_group">
+																	<div class="inline_form_long"><input type="text" class="form_input" placeholder="보낼 POINT"></div>
+																	<div class="inline_form_short">
+																		<div class="inline_keydata" style="width: 125px;">
+																			<span class="inline_key">잔액</span>
+																			<span class="inline_data">
+																				<span class="inline_data_num">226,004</span>
+																				<span class="inline_data_unit">ⓒ</span>
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<th><span class="form_label" style="width: 94px;">메모</span></th>
+															<td><input type="text" class="form_input" placeholder="전달할 메모를 입력하세요."></td>
+														</tr>
+														<tr>
+															<th><span class="form_label" style="width: 94px;">결제<br class="mb_br">비밀번호</span></th>
+															<td><input type="password" class="form_input" placeholder="결제 비밀번호를 입력하세요."></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<!-- // -->
+											<br><br>
+											<!--  -->
+											<div class="form_viewer_table_wrap">
+												<table class="form_viewer_table">
+													<tbody>
+														<tr>
+															<th><span class="form_label">기존 <br class="mb_br">비밀번호</span></th>
+															<td><input type="password" class="form_input" placeholder="기존 비밀번호"></td>
+														</tr>
+														<tr>
+															<th class="vertical_type2"><span class="form_label">새 <br class="mb_br">비밀번호</span></th>
+															<td>
+																<div class="td_inobj">
+																	<!-- placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+																	<input type="password" class="form_input respon_placeholder" placeholder="8~16자 영문, 숫자, 특수문자(!@#$%^&amp;_*)를 조합해주세요.">
+																	<p class="respon_placeholder_parag">8~16자 영문, 숫자, 특수문자(!@#$%^&amp;_*)를 조합해주세요.</p>
+																	<!-- // placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+																</div>
+																<div class="td_inobj">
+																	<!-- placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+																	<input type="password" class="form_input respon_placeholder" placeholder="8~16자 영문, 숫자, 특수문자(!@#$%^&amp;_*)를 조합해주세요.">
+																	<p class="respon_placeholder_parag">8~16자 영문, 숫자, 특수문자(!@#$%^&amp;_*)를 조합해주세요.</p>
+																	<!-- // placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<!-- // -->
+											<br><br>
+											<!--  -->
+											<div class="form_vertical_item_wrap">
+												<div class="form_vertical_item multi_layout">
+													<div class="form_multi_short">
+														<div class="chkrd_item">
+															<input type="checkbox" class="chkrd" id="guide_check">
+															<label for="guide_check" class="chkrd_label">이용약관 동의(필수)</label>
+														</div>
+													</div>
+													<div class="form_multi_long">
+														<textarea rows="10" cols="10" class="form_textarea"></textarea>
+													</div>
+												</div>
+												<div class="form_vertical_item">
+													<ul class="indent_list">
+														<li>
+															<span class="indent_bullet">1.</span>
+															<div class="indent_item"><strong class="color_emp_red font_bold">작년가입보험사와 다른보험사로 자동차보험을 가입</strong>하셔야 DONY등 지급혜택자격이 부여됩니다.</div>
+														</li>
+														<li>
+															<span class="indent_bullet">2.</span>
+															<div class="indent_item">본인 또는 추천인의 계약으로 산정되기 위해서는 <strong class="color_emp_red font_bold">계약 완료 후 "계약사실통지"에 들어가 가입정보를 입력</strong>하여야 행정처리가 됩니다.</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!-- // -->
+										</div>
+									</div>
+								</div>
+								<textarea class="textarea_size">
+<!--  -->
+<div class="form_viewer_table_wrap">
+	<table class="form_viewer_table">
+		<tbody>
+			<tr>
+				<th class="vertical_type2"><span class="form_label">휴대폰<br class="mb_br">번호</span></th>
+				<td>
+					<div class="inline_form_group">
+						<div class="inline_form_long">
+							<input type="text" class="form_input respon_placeholder" placeholder="예)01012345678 - 없이 숫자만 기재">
+							<!-- placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+							<p class="respon_placeholder_parag">예) 01012345678 - 없이 숫자만 기재</p>
+							<!-- // placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+						</div>
+						<div class="inline_form_short">
+							<a href="#" class="btn_inline_form">인증번호발송</a>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th class="vertical_type2"><span class="form_label">인증번호<br class="mb_br">입력</span></th>
+				<td>
+					<div class="inline_form_group">
+						<div class="inline_form_long"><input type="text" class="form_input respon_placeholder" placeholder="인증번호 입력"></div>
+					</div>
+					<p class="inline_form_copy">* 휴대폰 문자로 발송 된 인증번호를 입력해 주세요.</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!-- // -->
+
+<!--  -->
+<div class="form_viewer_table_wrap">
+	<table class="form_viewer_table">
+		<tbody>
+			<tr>
+				<th><span class="form_label emp_green" style="width: 94px;">UID</span></th>
+				<td>
+					<div class="inline_form_group">
+						<div class="inline_form_long"><input type="text" class="form_input" placeholder="보낼 EGG"></div>
+						<div class="inline_form_short">
+							<div class="inline_keydata" style="width: 125px;">
+								<span class="inline_key">잔액</span>
+								<span class="inline_data">
+									<span class="inline_data_num">11,000</span>
+									<span class="inline_data_unit">ⓒ</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th><span class="form_label emp_green" style="width: 94px;">DONY</span></th>
+				<td>
+					<div class="inline_form_group">
+						<div class="inline_form_long"><input type="text" class="form_input" placeholder="보낼 DONY"></div>
+						<div class="inline_form_short">
+							<div class="inline_keydata" style="width: 125px;">
+								<span class="inline_key">잔액</span>
+								<span class="inline_data">
+									<span class="inline_data_num">-943,468</span>
+									<span class="inline_data_unit">ⓒ</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th><span class="form_label emp_green" style="width: 94px;">POINT</span></th>
+				<td>
+					<div class="inline_form_group">
+						<div class="inline_form_long"><input type="text" class="form_input" placeholder="보낼 POINT"></div>
+						<div class="inline_form_short">
+							<div class="inline_keydata" style="width: 125px;">
+								<span class="inline_key">잔액</span>
+								<span class="inline_data">
+									<span class="inline_data_num">226,004</span>
+									<span class="inline_data_unit">ⓒ</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th><span class="form_label" style="width: 94px;">메모</span></th>
+				<td><input type="text" class="form_input" placeholder="전달할 메모를 입력하세요."></td>
+			</tr>
+			<tr>
+				<th><span class="form_label" style="width: 94px;">결제<br class="mb_br">비밀번호</span></th>
+				<td><input type="password" class="form_input" placeholder="결제 비밀번호를 입력하세요."></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!-- // -->
+
+<!--  -->
+<div class="form_viewer_table_wrap">
+	<table class="form_viewer_table">
+		<tbody>
+			<tr>
+				<th><span class="form_label">기존 <br class="mb_br">비밀번호</span></th>
+				<td><input type="password" class="form_input" placeholder="기존 비밀번호"></td>
+			</tr>
+			<tr>
+				<th class="vertical_type2"><span class="form_label">새 <br class="mb_br">비밀번호</span></th>
+				<td>
+					<div class="td_inobj">
+						<!-- placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+						<input type="password" class="form_input respon_placeholder" placeholder="8~16자 영문, 숫자, 특수문자(!@#$%^&amp;_*)를 조합해주세요.">
+						<p class="respon_placeholder_parag">8~16자 영문, 숫자, 특수문자(!@#$%^&amp;_*)를 조합해주세요.</p>
+						<!-- // placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+					</div>
+					<div class="td_inobj">
+						<!-- placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+						<input type="password" class="form_input respon_placeholder" placeholder="8~16자 영문, 숫자, 특수문자(!@#$%^&amp;_*)를 조합해주세요.">
+						<p class="respon_placeholder_parag">8~16자 영문, 숫자, 특수문자(!@#$%^&amp;_*)를 조합해주세요.</p>
+						<!-- // placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!-- // -->
+
+<!--  -->
+<div class="form_vertical_item_wrap">
+	<div class="form_vertical_item multi_layout">
+		<div class="form_multi_short">
+			<div class="chkrd_item">
+				<input type="checkbox" class="chkrd" id="guide_check">
+				<label for="guide_check" class="chkrd_label">이용약관 동의(필수)</label>
+			</div>
+		</div>
+		<div class="form_multi_long">
+			&lt;textarea rows="10" cols="10" class="form_textarea"></textarea&gt;
+		</div>
+	</div>
+	<div class="form_vertical_item">
+		<ul class="indent_list">
+			<li>
+				<span class="indent_bullet">1.</span>
+				<div class="indent_item"><strong class="color_emp_red font_bold">작년가입보험사와 다른보험사로 자동차보험을 가입</strong>하셔야 DONY등 지급혜택자격이 부여됩니다.</div>
+			</li>
+			<li>
+				<span class="indent_bullet">2.</span>
+				<div class="indent_item">본인 또는 추천인의 계약으로 산정되기 위해서는 <strong class="color_emp_red font_bold">계약 완료 후 "계약사실통지"에 들어가 가입정보를 입력</strong>하여야 행정처리가 됩니다.</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- // -->
+								</textarea>
+							</div>
+							<!-- // source_his_item -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>

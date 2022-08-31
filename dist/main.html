@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/front.js"></script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<header class="header_wrap">
+			<div class="pix_container">
+				<h1 class="toplogo"><a href="#" class="toplogo_link"><span class="hdtext">ORYORY</span></a></h1>
+				<nav class="gnb_list_wrap">
+					<ul class="gnb_list">
+						<li name="gnb_menu_01"><a href="#" class="gnb_menu"><span class="gnb_menu_text">포인트/전환</span></a></li>
+						<li name="gnb_menu_02"><a href="#" class="gnb_menu"><span class="gnb_menu_text">내지갑 사용내역</span></a></li>
+						<li name="gnb_menu_03"><a href="#" class="gnb_menu"><span class="gnb_menu_text">QR Code</span></a></li>
+						<li name="gnb_menu_04"><a href="#" class="gnb_menu"><span class="gnb_menu_text">개인정보 수정</span></a></li>
+					</ul>
+				</nav>
+				<div class="util_list_wrap">
+					<ul class="util_list">
+						<li><a href="#" class="util_menu ico_share"><span class="util_menu_text">추천공유</span></a></li>
+						<li><a href="#" class="util_menu box_type"><span class="util_menu_text">로그아웃</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- mobile_menu -->
+			<a href="#" class="btn_mobile_ico ico_share"><span class="hdtext">공유</span></a>
+			<a href="#" class="btn_mobile_menu"><span class="btn_mobile_menu_obj"><span class="hdtext">모바일메뉴</span></span></a>
+			<div class="mobile_mainmenu_zone">
+				<div class="mainmenu_dim"></div>
+				<div class="mobile_mainmenu_wrap">
+					<div class="mbutil_low">
+						<!-- 로그인 전 -->
+						<!-- <ul class="mbutil_hlist">
+                    <li><a href="#" class="mbutil">로그인</a></li>
+                    <li><a href="#" class="mbutil">회원가입</a></li>
+                </ul> -->
+						<!-- // 로그인 전 -->
+						<!-- 로그인 후 -->
+						<ul class="mbutil_hlist">
+							<li><a href="#" class="mbutil">로그아웃</a></li>
+						</ul>
+						<!-- // 로그인 후 -->
+					</div>
+					<div class="mbmenu_low">
+						<div class="mbmenu_inwrap">
+							<ul class="mbmenu_vlist">
+								<li name="gnb_menu_01"><a href="#" class="mbmenu_one">포인트/전환</a></li>
+								<li name="gnb_menu_02"><a href="#" class="mbmenu_one">내지갑 사용내역</a></li>
+								<li name="gnb_menu_03"><a href="#" class="mbmenu_one">QR Code</a></li>
+								<li name="gnb_menu_04"><a href="#" class="mbmenu_one">개인정보 수정</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mbelse_low">
+						<p class="mbelse_copy">Copyright (c) ORYORY. All rights reserved</p>
+					</div>
+					<a href="#" class="btn_mbmenuclose"><span class="hdtext">메인메뉴 닫기</span></a>
+				</div>
+			</div>
+			<!-- // mobile_menu -->
+		</header>
+		<section class="middle_wrap">
+			<div class="main_visual_wrap">
+				<div class="main_visual_bg"></div>
+				<div class="main_copy_group">
+					<div class="main_copy_signature">
+						<p class="copy_signature_main">ORYORY</p>
+						<p class="copy_signature_sub">M2와 함께하는 또 다른 세상의 시작</p>
+					</div>
+					<div class="main_copy_else">
+						<p class="main_copy_else_para">세상을 바꾸다. 유통을 바꾸다. <br class="mb_br">미래로의 도약</p>
+					</div>
+				</div>
+			</div>
+			<div class="main_item_price_wrap">
+				<div class="main_item_price_in">
+					<ul class="mitem_price_list">
+						<li>
+							<a href="#" class="mitem_price_obj ico_01">
+								<div class="mitem_price_obj_in">
+									<div class="mitem_price_title">
+										<span class="mitem_price_sig">COIN</span>
+										<span class="mitem_price_sub">코인</span>
+									</div>
+									<div class="mitem_price_cont">
+										<span class="mitem_price_number">0.0000</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="mitem_price_obj ico_02">
+								<div class="mitem_price_obj_in">
+									<div class="mitem_price_title">
+										<span class="mitem_price_sig">EGG</span>
+										<span class="mitem_price_sub">에그</span>
+									</div>
+									<div class="mitem_price_cont">
+										<span class="mitem_price_number">11,000</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="mitem_price_obj ico_03">
+								<div class="mitem_price_obj_in">
+									<div class="mitem_price_title">
+										<span class="mitem_price_sig">DONY</span>
+										<span class="mitem_price_sub">도니</span>
+									</div>
+									<div class="mitem_price_cont">
+										<span class="mitem_price_number">-943,468</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="mitem_price_obj ico_04">
+								<div class="mitem_price_obj_in">
+									<div class="mitem_price_title">
+										<span class="mitem_price_sig">POINT</span>
+										<span class="mitem_price_sub">포인트</span>
+									</div>
+									<div class="mitem_price_cont">
+										<span class="mitem_price_number">226,004</span>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main_item_content_wrap">
+				<div class="main_item_content_in">
+					<div class="main_item_content_bg"></div>
+					<div class="main_item_both">
+						<div class="main_item_cell define_quick">
+							<div class="main_item_title_row">
+								<p class="main_item_title_main">QUICK</p>
+								<p class="main_item_title_sub">바로가기</p>
+							</div>
+							<div class="main_item_content_row">
+								<div class="mc_quick_item">
+									<ul class="mc_quick_list">
+										<li><a href="#" class="mc_quick ico_present"><span class="mc_quick_text">포인트 선물</span></a></li>
+										<li><a href="#" class="mc_quick ico_return"><span class="mc_quick_text">포인트 전환</span></a></li>
+										<li><a href="#" class="mc_quick ico_recommand"><span class="mc_quick_text">추천인 보기</span></a></li>
+										<li><a href="#" class="mc_quick ico_qr"><span class="mc_quick_text">QR CODE</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="main_item_cell define_member">
+							<div class="main_item_title_row">
+								<p class="main_item_title_main">MEMBER</p>
+								<p class="main_item_title_sub">회원정보</p>
+							</div>
+							<div class="main_item_content_row">
+								<div class="mc_user_men_item">
+									<span class="mc_user_men"></span>
+									<div class="mc_user_spec_cols">
+										<ul class="mc_user_spec_list">
+											<li>
+												<div class="mc_user_label_cell"><span class="mc_user_label">UID</span></div>
+												<div class="mc_user_data_cell"><span class="mc_user_data">10027287( ID: oryory72 / 허훈.M1 )</span></div>
+											</li>
+											<li>
+												<div class="mc_user_label_cell"><span class="mc_user_label">email</span></div>
+												<div class="mc_user_data_cell"><span class="mc_user_data">winhh1@naver.com</span></div>
+											</li>
+											<li>
+												<div class="mc_user_label_cell"><span class="mc_user_label">mobile</span></div>
+												<div class="mc_user_data_cell"><span class="mc_user_data">010-4735-4023</span></div>
+											</li>
+											<li>
+												<div class="mc_user_label_cell"><span class="mc_user_label">추천인</span></div>
+												<div class="mc_user_data_cell"><span class="mc_user_data">10000000</span></div>
+											</li>
+										</ul>
+										<div class="mc_user_btn_cols">
+											<a href="#" class="btn_mc_icobox"><span class="mc_icobox_text">문의하기</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- notice -->
+		<div class="notice_popup_wrap">
+			<div class="bg_dim no_transition"></div>
+			<div class="notice_popup_cols">
+				<div class="popup_item notice_type no_transition">
+					<div class="popup_titlelow">
+						<h3 class="popup_title">오리아울렛 열림 공지</h3>
+					</div>
+					<div class="popup_contentlow">
+						<div class="pcont_inwrap">
+							<h4 class="pcont_subtitle">오리아울렛 오픈 알림</h4>
+							<ul class="indent_list respon_mt10 fontsize_15">
+								<li>
+									<span class="indent_bullet">1.</span>
+									<div class="indent_item">상품 : 오리오리 주식회사에서 판매하는 제품</div>
+								</li>
+								<li>
+									<span class="indent_bullet">2.</span>
+									<div class="indent_item">구매방법 : DONY, POINT 사용</div>
+								</li>
+								<li>
+									<span class="indent_bullet">3.</span>
+									<div class="indent_item">POINT 적용률 : 0~50%</div>
+								</li>
+								<li>
+									<span class="indent_bullet">4.</span>
+									<div class="indent_item">택배비 포함 가격</div>
+								</li>
+								<li>
+									<span class="indent_bullet">5.</span>
+									<div class="indent_item">택배 또는 센터 구매 가능</div>
+								</li>
+								<li>
+									<span class="indent_bullet">6.</span>
+									<div class="indent_item">아울렛 잭팟 참여 : 상품별 횟수 차등 (1~10회) 충족시 주화 1개 당첨</div>
+								</li>
+								<li>
+									<span class="indent_bullet">7.</span>
+									<div class="indent_item">아울렛에 상품 추가를 원하시는 분은 아래 파일 작성후 카카오 채널 "오리오리 패밀리"로 문의 주세요.</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="popup_btnlow">
+						<div class="padding_box_10_15 flex_grid align_both">
+							<div class="chkrd_item">
+								<input type="checkbox" class="chkrd today_check" id="today_check">
+								<label for="today_check" class="chkrd_label">오늘 하루 열지 않음</label>
+							</div>
+							<a href="javascript:;" class="btn_submitbox inline_type dtype2 close_trigger small">닫기</a>
+						</div>
+					</div>
+					<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- // notice -->
+		<!-- popup -->
+		<!-- <div class="popup_wrap" id="mainNotice">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_titlelow">
+					<h3 class="popup_title">오리아울렛 열림 공지</h3>
+				</div>
+				<div class="popup_contentlow">
+					<div class="pcont_inwrap">
+						<h4 class="pcont_subtitle">오리아울렛 오픈 알림</h4>
+						<ul class="indent_list respon_mt10 fontsize_15">
+							<li>
+								<span class="indent_bullet">1.</span>
+								<div class="indent_item">상품 : 오리오리 주식회사에서 판매하는 제품</div>
+							</li>
+							<li>
+								<span class="indent_bullet">2.</span>
+								<div class="indent_item">구매방법 : DONY, POINT 사용</div>
+							</li>
+							<li>
+								<span class="indent_bullet">3.</span>
+								<div class="indent_item">POINT 적용률 : 0~50%</div>
+							</li>
+							<li>
+								<span class="indent_bullet">4.</span>
+								<div class="indent_item">택배비 포함 가격</div>
+							</li>
+							<li>
+								<span class="indent_bullet">5.</span>
+								<div class="indent_item">택배 또는 센터 구매 가능</div>
+							</li>
+							<li>
+								<span class="indent_bullet">6.</span>
+								<div class="indent_item">아울렛 잭팟 참여 : 상품별 횟수 차등 (1~10회) 충족시 주화 1개 당첨</div>
+							</li>
+							<li>
+								<span class="indent_bullet">7.</span>
+								<div class="indent_item">아울렛에 상품 추가를 원하시는 분은 아래 파일 작성후 카카오 채널 "오리오리 패밀리"로 문의 주세요.</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="popup_btnlow">
+					<div class="padding_box_20 flex_grid align_right">
+						<div class="chkrd_item">
+							<input type="checkbox" class="chkrd" id="today_check">
+							<label for="today_check" class="chkrd_label">오늘 하루 열지 않음</label>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+			</div>
+		</div> -->
+		<div class="popup_wrap" id="giftPopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_titlelow">
+					<h3 class="popup_title">GIFT JACKPOT 참여회원</h3>
+				</div>
+				<div class="popup_contentlow">
+					<div class="pcont_inwrap">
+						<p class="fontsize_18">
+							10041566, 2045417216, 2045417216, 10197432, 2034133374, 10718321, 10718321, 10718321, 10718321, 10718321, 10718321, 10718321, 10718321, 10718321, 10718321, 10393226, 10748919, 2011808436, 2058996172, 2011936454, 2011983151, 2011983151, 2066023422, 2066023422, 2066023422, 2066023422, 2066023422, 2087909625, 2088105122, 10293152, 10293152, 2019630828, 10495660, 10234544, 2027330072, 2088030961, 2023327578, 2027330072, 2066023422, 2066023422, 2066023422, 2066023422, 2066023422, 2087909625, 2087909625, 10794495, 10794495, 2074204567, 10393226, 2011276489, 2011276489, 2011276489, 2011276489, 2011276489, 2011276489, 2011808436, 2087909625, 2087909625, 10794495, 10000000, 10553394, 2058996172, 10908731, 10553394, 10553394, 10553394, 10553394, 2087909625, 2087909625, 2087909625, 2087909625, 10696534, 10345259, 2019630828, 10963532, 10963532, 2011933906, 10963532, 10393226, 10197432, 10748919, 2011808436, 10795541, 10795541, 10795541, 10795541, 10795541, 2019630828, 2023327578, 10646448, 10735803, 10748919, 2011808436, 2077073358, 10735803, 2077073358, 10795541, 10795541, 10795541, 10795541, 10795541, 10795541, 10795541, 10795541, 2023327578, 10393226, 2019630828, 2077073358, 10041566, 10041566, 10041566, 2023327578, 2066023422, 2066023422, 10197432, 10735803, 10393226, 2077073358, 10748919, 10345259, 10345259, 10174595, 10607984, 10160813, 10969490, 10345259, 10735803, 10735803, 10516805, 10000000, 10597449, 10000000, 10981873, 10000000, 10000000, 10000000, 10000000, 2088030961, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10345259, 10345259, 10996625, 10996625, 10996625, 10996625, 10996625, 10246995, 10246995, 10246995, 10246995, 10246995, 10843668, 10843668, 10996625, 10843668, 10246995, 10246995, 10246995, 10246995, 10246995, 10246995, 10246995, 10246995, 10406291, 10000000, 10000000, 10345259, 10000000, 10000000, 2019630828, 2019630828, 2019630828, 10000000, 10000000, 10000000, 10000000, 10843668, 10843668, 10843668, 10843668, 10843668, 10843668, 10843668, 10843668, 10843668, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10345259, 10345259, 10197432, 10197432, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10598225, 10000000, 10438526, 10438526, 10438526, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10044760, 10000000, 10000000, 10000000, 10044760
+						</p>
+					</div>
+				</div>
+				<div class="popup_btnlow">
+					<div class="btn_submitbox_w dtype2">
+						<a href="javascript:;" class="btn_submitbox dtype2 close_trigger">닫기</a> <!-- close_trigger 있으면 닫기 -->
+					</div>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+			</div>
+		</div>
+		<div class="popup_wrap" id="offlinePopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_titlelow">
+					<h3 class="popup_title">OFFLINE JACKPOT 참여회원</h3>
+				</div>
+				<div class="popup_contentlow">
+					<div class="pcont_inwrap">
+						<p class="fontsize_18">2011983151, 2019731222, 2019731222, 2019731222, 2055481760, 2055481760, 2035853131, 2096250243, 2011604259, 10213622, 10546822, 2055229763, 2055229763, 2019561119, 2019561119, 2019561119, 10345259, 10417871, 2015901590, 2011604259, 2001282006, 10027287, 2073778880, 10015649, 10015649, 10027287, 2011936454, 10578622, 2011276489, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880</p>
+					</div>
+				</div>
+				<div class="popup_btnlow">
+					<div class="btn_submitbox_w dtype2">
+						<a href="javascript:;" class="btn_submitbox dtype2 close_trigger">닫기</a> <!-- close_trigger 있으면 닫기 -->
+					</div>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+			</div>
+		</div>
+		<div class="popup_wrap" id="outletPopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_titlelow">
+					<h3 class="popup_title">OUTLET JACKPOT 참여회원</h3>
+				</div>
+				<div class="popup_contentlow">
+					<div class="pcont_inwrap">
+						<p class="fontsize_18">2019731222, 2019731222, 2019731222, 2019731222, 2019731222, 2045417216, 2045417216, 2045417216, 2045417216, 2045417216, 2025492679, 2025492679, 2025492679, 2025492679, 2025492679, 10345259, 10345259, 10345259, 10345259, 10345259, 2087909625, 2087909625, 2087909625, 2087909625, 2087909625, 2063202094, 2063202094</p>
+					</div>
+				</div>
+				<div class="popup_btnlow">
+					<div class="btn_submitbox_w dtype2">
+						<a href="javascript:;" class="btn_submitbox dtype2 close_trigger">닫기</a> <!-- close_trigger 있으면 닫기 -->
+					</div>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+			</div>
+		</div>
+		<!-- // popup -->
+		<script>
+			window.addEventListener("load", function() {
+				// bg action
+				mainDesignFunc();
+
+				// respon action
+
+				// popup
+				// var mainNotice = new DesignPopup({
+				// 	selector: "#mainNotice"
+				// });
+
+				// notice popup
+				// noticePopup();
+
+				// document.querySelectorAll(".mc_chart_btn_group .btn_mcbox").forEach((element) => {
+				// 	element.addEventListener("click",function(e){
+				// 		e.preventDefault();
+				// 		const e_data_id = e.currentTarget.getAttribute("id");
+				// 		if(e_data_id === "btn_view_gift"){
+				// 			var giftObj = new DesignPopup({
+				// 				selector: "#giftPopup"
+				// 			});
+				// 		}else if(e_data_id === "btn_view_offline"){
+				// 			var offlineObj = new DesignPopup({
+				// 				selector: "#offlinePopup"
+				// 			});
+				// 		}else if(e_data_id === "btn_view_outlet"){
+				// 			var outletObj = new DesignPopup({
+				// 				selector: "#outletPopup"
+				// 			});
+				// 		}
+				// 	},false);
+				// },false)
+			}, false);
+		</script>
+		<footer class="footer_wrap">
+			<div class="pix_container">
+				<span class="bottomlogo"><span class="hdtext">ORYORY</span></span>
+				<p class="footer_copy">Copyright (c) ORYORY. All rights reserved</p>
+				<a href="#" class="btn_topgo"><span class="hdtext">페이지상단으로 이동</span></a>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
