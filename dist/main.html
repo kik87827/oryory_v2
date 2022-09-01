@@ -70,7 +70,7 @@
 			</div>
 			<!-- // mobile_menu -->
 		</header>
-		<section class="middle_wrap">
+		<section class="middle_wrap main_middle">
 			<div class="main_visual_wrap">
 				<div class="main_visual_bg"></div>
 				<div class="main_copy_group">
@@ -238,7 +238,7 @@
 			</div>
 			<div class="main_vertical_item_wrap">
 				<div class="main_vertical_item_in">
-					<div class="main_vertical_title_row">
+					<div class="main_vertical_title_row type2">
 						<p class="main_vertical_title">NOTICE</p>
 					</div>
 					<div class="main_vertical_content_row">
@@ -512,6 +512,7 @@
 				mainDesignFunc();
 
 				// respon action
+				maxWid("pc", ".mc_chart_title")
 
 				// popup
 				// var mainNotice = new DesignPopup({
@@ -519,27 +520,27 @@
 				// });
 
 				// notice popup
-				// noticePopup();
+				noticePopup();
 
-				// document.querySelectorAll(".mc_chart_btn_group .btn_mcbox").forEach((element) => {
-				// 	element.addEventListener("click",function(e){
-				// 		e.preventDefault();
-				// 		const e_data_id = e.currentTarget.getAttribute("id");
-				// 		if(e_data_id === "btn_view_gift"){
-				// 			var giftObj = new DesignPopup({
-				// 				selector: "#giftPopup"
-				// 			});
-				// 		}else if(e_data_id === "btn_view_offline"){
-				// 			var offlineObj = new DesignPopup({
-				// 				selector: "#offlinePopup"
-				// 			});
-				// 		}else if(e_data_id === "btn_view_outlet"){
-				// 			var outletObj = new DesignPopup({
-				// 				selector: "#outletPopup"
-				// 			});
-				// 		}
-				// 	},false);
-				// },false)
+				document.querySelectorAll(".mc_chart_btn_group .btn_mcbox").forEach((element) => {
+					element.addEventListener("click", function(e) {
+						e.preventDefault();
+						const e_data_id = e.currentTarget.getAttribute("id");
+						if (e_data_id === "btn_view_gift") {
+							var giftObj = new DesignPopup({
+								selector: "#giftPopup"
+							});
+						} else if (e_data_id === "btn_view_offline") {
+							var offlineObj = new DesignPopup({
+								selector: "#offlinePopup"
+							});
+						} else if (e_data_id === "btn_view_outlet") {
+							var outletObj = new DesignPopup({
+								selector: "#outletPopup"
+							});
+						}
+					}, false);
+				}, false)
 			}, false);
 		</script>
 		<footer class="footer_wrap">

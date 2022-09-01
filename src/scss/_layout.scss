@@ -240,7 +240,7 @@ body ::-webkit-scrollbar-track {background-color: #fff;border-radius: rem(10);bo
     .util_list_wrap,
     .gnb_list_wrap{display:none;}
     
-    .footer_wrap{height:auto;background:none;text-align: center;}
+    .footer_wrap{height:auto;background:none;text-align: center;padding:rem(10)}
     .footer_wrap .pix_container{display:block;}
     .footer_wrap .bottomlogo,
     .footer_wrap .btn_topgo{display:none;}
@@ -317,7 +317,6 @@ body ::-webkit-scrollbar-track {background-color: #fff;border-radius: rem(10);bo
             width:rem(16);height:rem(16);top:rem(7);left:rem(12);
         }
     }
-
 }
 
 @media (min-width:1921px){
