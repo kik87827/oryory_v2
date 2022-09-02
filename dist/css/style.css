@@ -4692,6 +4692,7 @@ html.smooth {
   background: #5d4688;
   border-radius: 6.25rem;
   font-size: 1rem;
+  word-break: keep-all;
   font-weight: 500;
   padding: 0.625rem 1.0625rem;
   line-height: 1;
@@ -4873,6 +4874,24 @@ html.smooth {
   border-radius: 0 2.8125rem 0 0;
 }
 
+.mc_quickbanner_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.9375rem -0.625rem -0.625rem;
+  text-align: center;
+}
+.mc_quickbanner_list > li {
+  flex: 0 0 33.3333333333%;
+  box-sizing: border-box;
+  padding: 0.625rem;
+}
+.mc_quickbanner {
+  display: block;
+}
+.mc_quickbanner img {
+  vertical-align: top;
+}
+
 @media (max-width: 1279px) {
   .mitem_price_list {
     margin: -0.78125rem;
@@ -4995,7 +5014,7 @@ html.smooth {
     font-size: 0.875rem;
   }
   .mc_chart_data_list {
-    margin: -0.625rem 0.625rem;
+    margin: -0.625rem -0.625rem 0.625rem;
     justify-content: flex-start;
   }
   .mc_chart_data_list > li {
@@ -5122,6 +5141,16 @@ html.smooth {
   }
   .main_else_quick_pixin:before {
     right: 0;
+  }
+  .mc_quickbanner_list {
+    margin: 1.25rem 0 0 0;
+    display: block;
+  }
+  .mc_quickbanner_list > li {
+    padding: 0 0 0.625rem 0;
+  }
+  .mc_quickbanner_list > li:last-of-type {
+    padding-bottom: 0;
   }
 }
 @media (min-width: 1920px) {

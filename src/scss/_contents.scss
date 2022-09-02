@@ -380,7 +380,7 @@ input.btn_submitbox{}
 .mc_chart_in{width:100%;height:100%;box-sizing: border-box;background:#f3edff;border-radius:100%;display:flex;align-items: center;justify-content: center;border: rem(8) solid #fff;}
 .mc_chart_number{font-size:rem(20);font-weight:700;color:#511bb4;}
 .mc_chart_btn_group{}
-.btn_mcbox{display:inline-block;background:#5d4688;border-radius:rem(100);font-size:rem(16);font-weight:500;padding:rem(10) rem(17);line-height:1;color:#fff;}
+.btn_mcbox{display:inline-block;background:#5d4688;border-radius:rem(100);font-size:rem(16);word-break:keep-all;font-weight:500;padding:rem(10) rem(17);line-height:1;color:#fff;}
 .btn_mcbox:hover{background:#7660a0;}
 
 .main_vertical_item_in,
@@ -420,6 +420,18 @@ input.btn_submitbox{}
 .main_else_quick_pixin{max-width:rem(1280);position:relative;margin:0 auto;padding:rem(75) rem(30);position:relative;
     &:before{display:block;content:'';width:100vw;height:100%;position:absolute;top:0;right:rem(-43);background:#e5e5e5 url("../images/bg_mc03.jpg") no-repeat 100% 0/cover;border-radius:0 rem(45) 0 0;}
 }
+.mc_quickbanner_list{
+    display:flex; flex-wrap:wrap; margin:rem(15) rem(-10) rem(-10); text-align: center;
+    >li{
+        flex: 0 0 33.33333333333333333333333333%; box-sizing: border-box; padding:rem(10);
+        &:last-of-type{}
+    }
+}
+.mc_quickbanner{
+    display:block;
+    img{vertical-align: top;}
+}
+
 
 @media (max-width:1279px){
     .mitem_price_list{margin:rem(-12.5);}
@@ -461,7 +473,7 @@ input.btn_submitbox{}
     .main_item_title_main{font-size:rem(20);}
     .main_item_title_sub{font-size:rem(14);}
 
-    .mc_chart_data_list{margin:rem(-10) rem(10);justify-content: flex-start;}
+    .mc_chart_data_list{margin:rem(-10) rem(-10) rem(10);justify-content: flex-start;}
     .mc_chart_data_list > li{
         display:block;padding:rem(10);flex:0 0 33.33333333333%;box-sizing: border-box;width:33.33333333333%;margin:0 !important;
         > *{margin-right:0;}
@@ -510,6 +522,14 @@ input.btn_submitbox{}
     .main_else_quick_pixin{
         padding:rem(20) 0;
         &:before{right:0;}
+    }
+
+    .mc_quickbanner_list{
+        margin:rem(20) 0 0 0; display:block;
+        >li{
+             padding:0 0 rem(10) 0;
+            &:last-of-type{padding-bottom:0;}
+        }
     }
 }
 
