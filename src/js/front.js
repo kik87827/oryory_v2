@@ -194,9 +194,7 @@ function commonLayout() {
   }
   // subminheight
   function subMinHeight(){
-    var subcontent = document.querySelector(".subcontent");
     var subcontent_box_wrap = document.querySelector(".subcontent_box_wrap");
-    var subcontent_box = document.querySelector(".subcontent_box");
     var subcontent_box_next = null;
     var subcontent_box_next_style = null;
     var subcontent_box_next_margin_top = 0;
@@ -205,34 +203,29 @@ function commonLayout() {
     var footer_wrap = document.querySelector(".footer_wrap");
     var html = document.querySelector("html");
     var body = document.querySelector("body");
-    if(subcontent_box_wrap == null || subcontent_box_wrap == null){return;}
-    subcontent_box_next = subcontent_box.nextElementSibling;
+    if(subcontent_box_wrap == null){return;}
+    subcontent_box_next = subcontent_box_wrap.nextElementSibling;
     action();
     window.addEventListener("resize",function(){
       action();
     },false);
 
     function action(){
-      subcontent_box.style.removeProperty("min-height");
+      subcontent_box_wrap.style.removeProperty("min-height");
       var subcontent_box_wrap_cssobj = window.getComputedStyle(subcontent_box_wrap, null);
+      var subcontent_box_wrap_get_top = parseInt(subcontent_box_wrap_cssobj.getPropertyValue("padding-top"));
       var subcontent_box_wrap_get_bottom = parseInt(subcontent_box_wrap_cssobj.getPropertyValue("padding-bottom"));
-      var subcontent_box_cssobj = window.getComputedStyle(subcontent_box, null);
-      var subcontent_box_get_bottom = parseInt(subcontent_box_cssobj.getPropertyValue("padding-bottom"));
-      var subcontent_box_get_top = parseInt(subcontent_box_cssobj.getPropertyValue("padding-top"));
       var footer_wrap_height = footer_wrap !== null ? footer_wrap.offsetHeight : 0;
       var documentHeight = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-
       if(subcontent_box_next !== null){
         subcontent_box_next_style = window.getComputedStyle(subcontent_box_next, null);
         subcontent_box_next_margin_top = parseInt(subcontent_box_next_style.getPropertyValue("margin-top"));
         subcontent_box_next_height = subcontent_box_next !== null ? subcontent_box_next.offsetHeight : 0;
       }
 
-
       
 
-      subcontent_box.style.minHeight = documentHeight - subcontent_box.offsetTop - (subcontent_box_wrap_get_bottom + subcontent_box_get_top + subcontent_box_get_bottom + footer_wrap_height + subcontent_box_next_margin_top + subcontent_box_next_height) + "px";
-      // subcontent.style.minHeight = documentHeight - subcontent.offsetTop - (subcontent_box_wrap_get_bottom+subcontent_box_get_bottom+footer_wrap_height)  + "px";
+      subcontent_box_wrap.style.minHeight = documentHeight -  (subcontent_box_wrap.offsetTop + subcontent_box_wrap_get_bottom + subcontent_box_wrap_get_top + footer_wrap_height + subcontent_box_next_margin_top + subcontent_box_next_height) + "px";
     }
   }
 
@@ -504,7 +497,11 @@ function mainDesignFunc() {
   const main_visual_bg = document.querySelector(".main_visual_bg");
   const main_item_content_bg = document.querySelector(".main_item_content_bg");
   const main_item_price_wrap = document.querySelector(".main_item_price_wrap");
+  const main_visual_wrap = document.querySelector(".main_visual_wrap");
   let main_item_price_wrap_height = main_item_price_wrap.getBoundingClientRect().height;
+
+  main_visual_wrap.classList.add("motion_end");
+
   action();
   window.addEventListener("resize",()=>{
     action();
